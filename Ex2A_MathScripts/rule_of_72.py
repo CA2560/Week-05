@@ -8,8 +8,8 @@ time_with_rate = 72/ time_to_double
 worth = bank_acc * (1 + (time_with_rate / 100)) ** time_to_double
 print(int(worth))
 
-print("Your current savings is $" + str(float(bank_acc)))
-print("at a " + str(ir) + "% interest rate, your savings account will be")
-print("worth $" + str(int(worth)) + " in " + str(int(time_to_double)) + " years.")
+print("Your current savings is $" + str(format(bank_acc, '.2f')))
+print("at a " + str(ir) + "$% interest rate, your savings account will be")
+print("worth $" + str(format(worth, '.2f')) + " in " + str(int(time_to_double)) + " years.")
 
 # Had to look up the formula for the total ammount of money to be doubled with interest.
